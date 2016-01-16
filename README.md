@@ -1,6 +1,7 @@
-# es6-server-lib-blueprint
+# es6-react-lib-blueprint
 
-> Blueprint for building an ES6 server library and publish it to NPM.
+> Blueprint for building an ES6 ReactJS _(and generally client side)_ 
+> library and publish it to NPM.
 
 If you want to write an _NPM module_ with _ES6_ this is repository is a good starting point for you. Clone it and dig into `/src` and `/test` folder to write functionalities and unit tests.
 

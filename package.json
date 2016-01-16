@@ -1,22 +1,22 @@
 {
-  "name": "es6-server-lib-blueprint",
+  "name": "es6-react-lib-blueprint",
   "version": "0.0.0",
-  "description": "Blueprint for building an ES6 server library and publish it to NPM",
+  "description": "Blueprint for building an ES6 ReactJS library and publish it to NPM",
   "main": "./lib/index.js",
   "jsnext:main": "./src/index.js",
   "scripts": {
     "clean": "./node_modules/rimraf/bin.js lib coverage",
     "lint": "./node_modules/eslint/bin/eslint.js src test/",
-    "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib",
-    "build:watch": "./node_modules/babel-cli/bin/babel.js --watch src --out-dir lib",
+    "build:lib": "./node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "build:lib:watch": "./node_modules/babel-cli/bin/babel.js --watch src --out-dir lib",
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register",
     "test:watch": "npm test -- --watch",
     "test:cov": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha",
-    "prepublish": "npm run clean && npm run build && npm test",
+    "prepublish": "npm run clean && npm run build && npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcopeg/es6-server-lib-blueprint.git"
+    "url": "git+https://github.com/marcopeg/es6-react-lib-blueprint.git"
   },
   "files": [
     "lib",
@@ -33,25 +33,33 @@
     "blueprint",
     "transpile",
     "boilerplate",
-    "library"
+    "library",
+    "react",
+    "reactjs"
   ],
   "author": "Marco Pegoraro <hello@marcopeg.com> (http://github.com/marcopeg)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcopeg/es6-server-lib-blueprint/issues"
+    "url": "https://github.com/marcopeg/es6-react-lib-blueprint/issues"
   },
-  "homepage": "https://github.com/marcopeg/es6-server-lib-blueprint#readme",
+  "homepage": "https://github.com/marcopeg/es6-react-lib-blueprint#readme",
   "devDependencies": {
     "babel-cli": "^6.4.0",
     "babel-core": "^6.4.0",
     "babel-eslint": "^4.1.6",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-plugin-nodeca": "^1.0.3",
+    "eslint-plugin-react": "^3.15.0",
     "isparta": "^4.0.0",
     "mocha": "^2.3.4",
+    "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14.6",
+    "react-dom": "^0.14.6",
     "rimraf": "^2.5.0",
     "sinon": "^1.17.2"
   }
