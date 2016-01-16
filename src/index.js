@@ -1,6 +1,6 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Foo} from './component';
+import {Foo} from './Foo';
 
 ReactDOM.render(<Foo />, document.body);
