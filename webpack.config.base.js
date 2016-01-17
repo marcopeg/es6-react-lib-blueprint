@@ -1,22 +1,20 @@
-'use strict'
-
-var webpack = require('webpack')
+'use strict';
 
 module.exports = {
-  externals: {
-    react: 'react',
-    'react-redux': 'react-redux',
-  },
-  module: {
-    loaders: [
-      { test: /\.js$/, loaders: ['babel-loader'], exclude: /node_modules/ }
-    ]
-  },
-  output: {
-    library: 'ReactRedux',
-    libraryTarget: 'umd'
-  },
-  resolve: {
-    extensions: ['', '.js']
-  }
-}
+    externals: {
+        'react': 'react',
+        'react-dom': 'ReactDOM',
+    },
+    module: {
+        loaders: [
+            { test: /\.js$/, loaders: ['babel-loader'], exclude: /node_modules/ },
+        ],
+    },
+    output: {
+        library: 'LibraryName',
+        libraryTarget: 'umd',
+    },
+    resolve: {
+        extensions: ['', '.js'],
+    },
+};
