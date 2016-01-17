@@ -16,7 +16,7 @@ export class Foo extends React.Component {
     render() {
         var {value} = this.props;
         return (
-            <div>
+            <div className="foo">
                 {value}
             </div>
         );
